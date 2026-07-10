@@ -1,7 +1,15 @@
-# Device/Vendor/Kernel Manifest
+# Local Manifests for Samsung Galaxy A04s (a04s)
 
-	git clone https://github.com/Samsung-Galaxy-A13-A135F-Development/local_manifests.git -b lineage-23.2 .repo/local_manifests
+This repository contains the local manifest to build LineageOS (or any AOSP-based ROM) for the Samsung Galaxy A04s (SM-A047F).
 
-# Usage
+## Prerequisites
 
-	repo sync
+- A Linux machine (or WSL) with at least 16 GB RAM and 400 GB free storage.
+- `repo` tool installed and initialized for LineageOS 23.2 (Android 16).
+
+## Cloning the Manifests
+
+Inside your Android source root directory (where you have `.repo`), run:
+
+```bash
+git clone https://github.com/michaelowusuntim6/local_manifests.git -b lineage-23.2 .repo/local_manifests
