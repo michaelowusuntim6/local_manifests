@@ -18,7 +18,7 @@
   <project name="android_vendor_samsung_a04s" path="vendor/samsung/a04s" remote="a04sdev" />
 
   <!-- Kernel -->
-  <project name="android_kernel_samsung_a04s" path="kernel/samsung/exynos850" remote="a04sdev" />
+  <project name="android_kernel_samsung_a04s" path="kernel/samsung/a04s" remote="a04sdev" />
 
   <!-- Common SLSI repositories (same as A13) -->
   <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="lineage-a13" />
