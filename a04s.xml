@@ -6,19 +6,26 @@
            fetch="https://github.com/LineageOS"
            revision="lineage-23.2" />
 
-  <!-- Remote for my own A04s-specific repositories -->
+  <!-- Remote for my own A04s-specific repositories (default: lineage-23.2) -->
   <remote  name="a04sdev"
            fetch="https://github.com/michaelowusuntim6"
            revision="lineage-23.2" />
 
-  <!-- Device -->
-  <project name="android_device_samsung_a04s" path="device/samsung/a04s" remote="a04sdev" />
+  <!-- Device – override to use bka branch -->
+  <project name="android_device_samsung_a04s"
+           path="device/samsung/a04s"
+           remote="a04sdev"
+           revision="bka" />
 
-  <!-- Vendor -->
-  <project name="android_vendor_samsung_a04s" path="vendor/samsung/a04s" remote="a04sdev" />
+  <!-- Vendor – stays on default lineage-23.2 -->
+  <project name="android_vendor_samsung_a04s"
+           path="vendor/samsung/a04s"
+           remote="a04sdev" />
 
-  <!-- Kernel -->
-  <project name="android_kernel_samsung_a04s" path="kernel/samsung/a04s" remote="a04sdev" />
+  <!-- Kernel – stays on default lineage-23.2 -->
+  <project name="android_kernel_samsung_a04s"
+           path="kernel/samsung/a04s"
+           remote="a04sdev" />
 
   <!-- Common SLSI repositories (same as A13) -->
   <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="lineage-a13" />
