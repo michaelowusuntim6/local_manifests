@@ -12,4 +12,4 @@ This repository contains the local manifest to build LineageOS (or any AOSP-base
 Inside your Android source root directory (where you have `.repo`), run:
 
 ```bash
-git clone https://github.com/michaelowusuntim6/local_manifests.git -b lineage-23.2 .repo/local_manifests
+git clone https://github.com/michaelowusuntim6/local_manifests.git -b bka .repo/local_manifests
