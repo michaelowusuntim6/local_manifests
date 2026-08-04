@@ -1,11 +1,11 @@
 # Local Manifests for Samsung Galaxy A04s (a04s)
 
-This repository contains the local manifest to build LineageOS (or any AOSP-based ROM) for the Samsung Galaxy A04s (SM-A047F).
+This repository contains the local manifest to build Evolution X (or any AOSP-based ROM) for the Samsung Galaxy A04s (SM-A047F).
 
 ## Prerequisites
 
 - A Linux machine (or WSL) with at least 16 GB RAM and 400 GB free storage.
-- `repo` tool installed and initialized for LineageOS 23.2 (Android 16).
+- `repo` tool installed and initialized for Evolution X 11.x (Android 16).
 
 ## Cloning the Manifests
 
