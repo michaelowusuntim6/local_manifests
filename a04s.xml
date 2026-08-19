@@ -1,39 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Remote for LineageOS common repositories -->
-  <remote  name="lineage-a13"
-           fetch="https://github.com/LineageOS"
-           revision="lineage-23.2" />
+  <!-- LineageOS common repositories -->
+  <remote
+      name="lineage"
+      fetch="https://github.com/LineageOS"
+      revision="lineage-23.2" />
 
-  <!-- Remote for my own A04s-specific repositories -->
-  <remote  name="a04sdev"
-           fetch="https://github.com/michaelowusuntim6"
-           revision="lineage-23.2" />
+  <!-- My A04s repositories -->
+  <remote
+      name="a04sdev"
+      fetch="https://github.com/michaelowusuntim6"
+      revision="lineage-23.2" />
 
-  <!-- Device -->
-  <project name="android_device_samsung_a04s" path="device/samsung/a04s" remote="a04sdev" />
+  <!-- A04s device tree -->
+  <project
+      name="android_device_samsung_a04s"
+      path="device/samsung/a04s"
+      remote="a04sdev"
+      revision="a04s-port" />
 
-  <!-- Vendor -->
-  <project name="android_vendor_samsung_a04s" path="vendor/samsung/a04s" remote="a04sdev" />
+  <!-- A04s vendor -->
+  <project
+      name="android_vendor_samsung_a04s"
+      path="vendor/samsung/a04s"
+      remote="a04sdev"
+      revision="a04s-port" />
 
-  <!-- Kernel -->
-  <project name="android_kernel_samsung_a04s" path="kernel/samsung/a04s" remote="a04sdev" />
+  <!-- A04s kernel -->
+  <project
+      name="android_kernel_samsung_a04s"
+      path="kernel/samsung/a04s"
+      remote="a04sdev"
+      revision="a04s-port" />
 
-  <!-- Common SLSI repositories (same as A13) -->
-  <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="lineage-a13" />
-  <project name="android_hardware_samsung" path="hardware/samsung" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi_libbt" path="hardware/samsung_slsi/libbt" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi_nfc" path="hardware/samsung_slsi/nfc" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" remote="lineage-a13" />
+  <!-- Samsung common -->
+  <project
+      name="android_device_samsung_slsi_sepolicy"
+      path="device/samsung_slsi/sepolicy"
+      remote="lineage" />
 
-  <!-- SLSI-Linaro repositories (same as A13) -->
-  <project name="android_hardware_samsung_slsi-linaro_config" path="hardware/samsung_slsi-linaro/config" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi-linaro_exynos" path="hardware/samsung_slsi-linaro/exynos" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi-linaro_exynos5" path="hardware/samsung_slsi-linaro/exynos5" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi-linaro_graphics" path="hardware/samsung_slsi-linaro/graphics" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi-linaro_interfaces" path="hardware/samsung_slsi-linaro/interfaces" remote="lineage-a13" />
-  <project name="android_hardware_samsung_slsi-linaro_openmax" path="hardware/samsung_slsi-linaro/openmax" remote="lineage-a13" />
+  <project
+      name="android_hardware_samsung"
+      path="hardware/samsung"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi_libbt"
+      path="hardware/samsung_slsi/libbt"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi_nfc"
+      path="hardware/samsung_slsi/nfc"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal"
+      path="hardware/samsung_slsi/scsc_wifibt/wifi_hal"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib"
+      path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
+      remote="lineage" />
+
+  <!-- SLSI-Linaro -->
+  <project
+      name="android_hardware_samsung_slsi-linaro_config"
+      path="hardware/samsung_slsi-linaro/config"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi-linaro_exynos"
+      path="hardware/samsung_slsi-linaro/exynos"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi-linaro_exynos5"
+      path="hardware/samsung_slsi-linaro/exynos5"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi-linaro_graphics"
+      path="hardware/samsung_slsi-linaro/graphics"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi-linaro_interfaces"
+      path="hardware/samsung_slsi-linaro/interfaces"
+      remote="lineage" />
+
+  <project
+      name="android_hardware_samsung_slsi-linaro_openmax"
+      path="hardware/samsung_slsi-linaro/openmax"
+      remote="lineage" />
 
 </manifest>
